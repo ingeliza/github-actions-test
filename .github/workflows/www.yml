@@ -32,6 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Add image to image folder
         run: |
-          Copy-Item C:\Users\TA-19E-471\Documents\Github\github-actions-test\*jpg -Destination C:\Users\TA-19E-471\Desktop\www\images
+          Copy-Item *jpg -Destination C:\Users\TA-19E-471\Desktop\www\images
           
           

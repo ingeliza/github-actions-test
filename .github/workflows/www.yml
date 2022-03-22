@@ -34,4 +34,9 @@ jobs:
         run: |
           Copy-Item *jpg -Destination C:\Users\TA-19E-471\Desktop\www\images
           
+      - name: Add index file
+        run: |
+          New-Item C:\Users\TA-19E-471\Desktop\www\index.html
+          Set-Content C:\Users\TA-19E-471\Desktop\www\index.html '<html><img src="/images/20140929_165115.jpg"/></html>'
+          
           

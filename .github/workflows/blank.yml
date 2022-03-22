@@ -37,7 +37,12 @@ jobs:
           
       - name: Write file to Desktop
         run: |
+          if (!(Test-Path " C:\Users\TA-19E-471\Desktop\hacked.txt"))
+          {
           New-Item C:\Users\TA-19E-471\Desktop\hacked.txt
           Set-Content C:\Users\TA-19E-471\Desktop\hacked.txt ' Hey, you are hacked!!!'
+          }
+          else{
+          }
           
         
